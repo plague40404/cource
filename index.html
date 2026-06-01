@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+         <aside class="sidebar">
+<h1> Black Noodles</h1>
+ <div class="sub">Азиатское мено для настоящих гурманов </div>
+        <nav class="nav-links">
+            <a href="#ramen">РАМЕН</a>  
+            <a href="#TOMYAM">ТОМ ЯМ</a> 
+            <a href="#sushi">СУШИ/РОЛЛЫ</a>  
+            <a href="#desserts">ДЕСЕРТЫ</a>  
+            <a href="#drinks">НАПИТКИ</a>
+        </nav>
+</aside>
+    <main class="menu-content">
+        <header class="site-header">
+            <div class="logo-area">
+                <div class="logo-icon">🥢</div>
+                <div class="logo-text">
+                    <h1>Black Noodles</h1>
+                </div>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="cart">
+                    <span class="action-icon">🛒</span>
+                    <span class="action-label">КОРЗИНА</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Введите название блюда...">
+                <button class="search-btn" id="searchButton">НАЙТИ</button>
+            </div>
+            <p style="margin-top: 10px; font-size: 0.9rem;">⭐ Попробуйте: рамен, суши, удон, моти, чай, лосось</p>
+        </div>
+
+        <!-- ГАЛЕРЕЯ-СЛАЙДЕР -->
+        <div class="promo-section">
+            <div class="promo-title">
+                <span>🎁</span> АКЦИИ И ПРЕДЛОЖЕНИЯ
+            </div>
+            <div class="slider-container">
+                <button class="slider-btn slider-btn-prev" id="prevSlide">‹</button>
+                <button class="slider-btn slider-btn-next" id="nextSlide">›</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slider-slide"><div class="promo-card"><div class="promo-image"><img src="https://images.unsplash.com/photo-1617093727343-374698b1f7a4?w=600&h=300&fit=crop" alt="Рамен"></div><div class="promo-content"><div class="promo-badge">🔥 СЕТОВОЕ</div><h3>Рамен + Сётю</h3><p>Любой рамен + разливной сётю за 399₽ вместо 590₽!</p></div></div></div>
+                        <div class="slider-slide"><div class="promo-card"><div class="promo-image"><img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?w=600&h=300&fit=crop" alt="Суши"></div><div class="promo-content"><div class="promo-badge">🍣 СУШИ-СЕТ</div><h3>2+1 в подарок</h3><p>При заказе двух любых роллов — третий бесплатно!</p></div></div></div>
+                        <div class="slider-slide"><div class="promo-card"><div class="promo-image"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=300&fit=crop" alt="Напитки"></div><div class="promo-content"><div class="promo-badge">🥤 СЧАСТЛИВЫЕ ЧАСЫ</div><h3>Напитки за 99₽</h3><p>Ежедневно 15:00-17:00: тайское молоко, лимонад юдзу, рамунэ!</p></div></div></div>
+                        <div class="slider-slide"><div class="promo-card"><div class="promo-image"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&h=300&fit=crop" alt="Доставка"></div><div class="promo-content"><div class="promo-badge">🚚 ДОСТАВКА</div><h3>Бесплатно от 1500₽</h3><p>При заказе от 1500 рублей — доставка за наш счёт. Промокод: BLACKFREE</p></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+
+     <section id="ramen" class="menu-section">
+            <h2 class="section-title"> РАМЕН </h2>
+           <div class="dish-grid">
+                <div class="dish-card"data-dish="Тонкоцу" data-price="490">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\тоцкоцку.jfif">
+                    </div>
+                    <div class="dish-header">
+                        <span class="dish-name">Тонкоцу</span>
+                        <span class="price-button">490₽</span>
+                    </div>
+                    <div class="dish-description">свинина, лапша, маринованное яйцо, бобы, наваристый бульон</div>
+                    <div class="dish-meta"><span>⚖️ 450 г</span> <span>🔥 хиит</span></div>
+                </div>
+                <div class="dish-card" data-dish="Сёю с курицей" data-price="430">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\сею.jpg">
+                    </div>
+                    <div class="dish-header">
+                        <span class="dish-name">Сёю с курицей</span>
+                        <span class="price-button">430₽</span>
+                    </div>
+                    <div class="dish-description">куриное филе, соевый соус, лапша, бамбук, зелень</div>
+                    <div class="dish-meta"><span>⚖️ 420 г</span></div>
+                </div>
+                <div class="dish-card" data-dish="Мисо тофу" data-price="410">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\мисо.jpg">
+                    </div>
+                    <div class="dish-header">
+                        <span class="dish-name">Мисо тофу</span>
+                        <span class="price-button">410₽</span>
+                    </div>
+                    <div class="badge">вегетарианский</div>
+                    <div class="dish-description">тофу, мисо-паста, кукуруза, нори, шпинат</div>
+                    <div class="dish-meta"><span>⚖️ 400 г</span></div>
+                </div>
+                <div class="dish-card data-dish="Чаджанмён с креветками" data-price="430"">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\чандж.png">
+                    </div>
+                    <div class="dish-header">
+                        <span class="dish-name">Чаджанмён с креветками</span>
+                         <span class="price-button">430₽</span>
+                    </div>
+                    <div class="dish-description">лапша мён, картофель, креветки, цукини, кунжут</div>
+                    <div class="dish-meta"><span>⚖️ 420 г</span><span>фирменное блюдо</span></div>
+                </div>
+                </div>
+     </section>
+    
+                <div class="note">добавки: яйцо 40₽ · нори 30₽ · острота(1/2/3/4) 20/30/40/50₽ · грибы 40₽ </div>
+            <hr>
+    <section id="TOMYAM" class="menu-section">
+            <h2 class="section-title"> ТОМ ЯМ </h2>
+            <div class="dish-grid">
+                <div class="dish-card" data-dish="Классический с курицей" data-price="540">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\ТОМЯМ С КУРИЦЕЙ.webp">
+                    </div>
+                    <div class="dish-header"><span class="dish-name">Классический с курицей</span><span class="price-button">540₽</span></div>
+                    <div class="dish-description">Курица, томаты черри, шампиньоны, лук шалот, лемонграсс, галангал, лист каффира, лайм, кинза, кокосовое молоко. Подаётся с порцией пропаренного риса.</div>
+                    <div class="dish-meta"><span>⚖️ 380 г</span><span>🥩 острый</span></div>
+                </div>
+                <div class="dish-card" data-dish="С морепродуктами" data-price="740">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\ТОМЯМ С МОРЕПРОДУКТАМИ.webp">
+                    </div>
+                    <div class="dish-header"><span class="dish-name"> С морепродуктами</span><span class="price-button">740₽</span></div>
+                    <div class="dish-description">Королевские креветки, королевская мидия в створке, морской коктейль (кальмар, мясо мидий, щупальца осьминога), томаты черри, шампиньоны, лук шалот, лемонграсс, галангал, лист каффира, лайм, кинза, кокосовое молоко. Подаётся с порцией пропаренного риса.</div>
+                    <div class="dish-meta"><span>⚖️ 580 г</span><span>🥩 острый</span></div>
+                </div>
+                <div class="dish-card" data-dish="С королевскими креветками" data-price="640">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\ТОМЯМ С КРЕВЕТКАМИ.webp">
+                    </div>
+                    <div class="dish-header"><span class="dish-name">С королевскими креветками</span><span class="price-button">640₽</span></div>
+                    <div class="dish-description">Королевские креветки, томаты черри, шампиньоны, лук шалот, лемонграсс, галангал, лист каффира, лайм, кинза, кокосовое молоко. Подаётся с порцией пропаренного риса.</div>
+                    <div class="dish-meta"><span>⚖️ 480 г</span><span>🥩 острый</span></div>
+                </div>
+                <div class="dish-card" data-dish="С лососем" data-price="640">
+                    <div class="dish-image">
+                        <img src=".\black-noodles\ТОМЯМ С ЛОСОСЕМ.webp">
+                    </div>
+                    <div class="dish-header"><span class="dish-name">С лососем</span><span class="price-button">640₽</span></div>
+                    <div class="dish-description">Лосось, томаты черри, шампиньоны, лук шалот, лемонграсс, галангал, лист каффира, лайм, кинза, кокосовое молоко. Подаётся с порцией пропаренного риса.</div>
+                    <div class="dish-meta"><span>⚖️ 480 г</span><span>🥩 острый</span></div>
+    </section>
+                       <div class="note">добавки: креветки 200₽ · нори 30₽ · острота(1/2/3/4) 0/0/0/50₽ · грибы 40₽ </div>
+                       
+            </hr>
+            <hr>
+        <section id="sushi" class="menu-section">
+            <h2 class="section-title"> СУШИ И РОЛЛЫ</h2>
+            <div class="dish-grid">
+                <div class="dish-card" data-dish="Филадельфия" data-price="680"><div class="dish-image">
+                        <img src=".\black-noodles\fill.webp">
+                    </div><div class="dish-header"><span class="dish-name">Филадельфия</span><span class="price-button">680₽</span></div><div class="dish-description">лосось, сливочный сыр, огурец</div><div class="dish-meta"><span>🍣 8 шт</span></div></div>
+                <div class="dish-card" data-dish="Калифорния с крабом" data-price="620"><div class="dish-image">
+                        <img src=".\black-noodles\kal.jpg">
+                    </div><div class="dish-header"><span class="dish-name">Калифорния с крабом</span><span class="price-button">620₽</span></div><div class="dish-description">краб-микс, авокадо, икра тобико</div><div class="dish-meta"><span>🍣 8 шт</span></div></div>
+                <div class="dish-card" data-dish="Нигири сет" data-price="720"><div class="dish-image">
+                        <img src=".\black-noodles\nig.webp">
+                    </div><div class="dish-header"><span class="dish-name">Нигири сет (3 вида)</span><span class="price-button">720₽</span></div><div class="dish-description">тунец, лосось, угорь + васаби</div><div class="dish-meta"><span>🍣 6 шт</span></div></div>
+                <div class="dish-card" data-dish="Запеч. с лососем" data-price="590"><div class="dish-image">
+                        <img src=".\black-noodles\530f163e-c1f5-418e-b16d-8b797a9e74a0.webp">
+                    </div><div class="dish-header"><span class="dish-name">Запеч. с лососем</span><span class="price-button">590₽</span></div><div class="dish-description">лосось, сыр, соус унаги</div><div class="dish-meta"><span>🍣 8 шт</span></div></div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <h2 class="section-title">АЗИАТСКИЕ ДЕСЕРТЫ</h2>
+            <div class="dish-grid">
+                <div class="dish-card" data-dish="Моти с манго" data-price="190"><div class="dish-image">
+                        <img src=".\black-noodles\mo.webp">
+                    </div><div class="dish-header"><span class="dish-name">Моти с манго</span><span class="price-button">190₽</span></div><div class="dish-description">рисовое тесто, манго, кокос</div><div class="dish-meta"><span>2 шт</span></div></div>
+                <div class="dish-card" data-dish="Тайские блинчики" data-price="250"><div class="dish-image">
+                        <img src=".\black-noodles\i.webp">
+                    </div><div class="dish-header"><span class="dish-name">Тайские блинчики</span><span class="price-button">250₽</span></div><div class="dish-description">с бананом и сгущёнкой</div><div class="dish-meta"><span>1 шт</span></div></div>
+                <div class="dish-card" data-dish="Дораяки" data-price="220"><div class="dish-image">
+                        <img src=".\black-noodles\maxresdefault.jpg">
+                    </div><div class="dish-header"><span class="dish-name">Дораяки</span><span class="price-button">220₽</span></div><div class="dish-description">медовые оладьи с красной фасолью</div><div class="dish-meta"><span>3 шт</span></div></div>
+                <div class="dish-card" data-dish="Мача-чизкейк" data-price="340"><div class="dish-image">
+                        <img src=".\black-noodles\maxresdefault (1).jpg">
+                    </div><div class="dish-header"><span class="dish-name">Мача-чизкейк</span><span class="price-button">340₽</span></div><div class="dish-description">зелёный чай, сливочный сыр</div><div class="dish-meta"><span>150 г</span></div></div>
+            </div>
+        </section>
+
+        <section id="drinks" class="menu-section">
+            <h2 class="section-title">НАПИТКИ</h2>
+            <div class="dish-grid">
+                <div class="dish-card" data-dish="Зелёный чай" data-price="180"><div class="dish-image">
+                        <img src=".\black-noodles\glass-cup-tasty-green-tea-white-background_144356-22992.avif">
+                    </div><div class="dish-header"><span class="dish-name">Зелёный чай</span><span class="price-button">180₽</span></div><div class="dish-description">Жасмин / Сенча</div><div class="dish-meta"><span>350 мл</span></div></div>
+                <div class="dish-card" data-dish="Лимонад юдзу" data-price="240"><div class="dish-image">
+                        <img src=".\black-noodles\b5f48b51-a1fc-432e-94c0-94415b6a576f.webp">
+                    </div><div class="dish-header"><span class="dish-name">Лимонад юдзу</span><span class="price-button">240₽</span></div><div class="dish-description">освежающий цитрус</div><div class="dish-meta"><span>400 мл</span></div></div>
+                <div class="dish-card" data-dish="Тайское молоко" data-price="210"><div class="dish-image">
+                        <img src=".\black-noodles\97a2841a80c2e7cf6a9e92a203fb8396-orig.jpg">
+                    </div><div class="dish-header"><span class="dish-name">Тайское молоко</span><span class="price-button">210₽</span></div><div class="dish-description">холодное, пряное</div><div class="dish-meta"><span>300 мл</span></div></div>
+                <div class="dish-card" data-dish="Рамунэ" data-price="190"><div class="dish-image">
+                        <img src=".\black-noodles\i (1).webp">
+                    </div><div class="dish-header"><span class="dish-name">Рамунэ</span><span class="price-button">190₽</span></div><div class="dish-description">клубника / личи</div><div class="dish-meta"><span>200 мл</span></div></div>
+            </div>
+        </section>
+
+        <div class="footer-info">
+            <span>📞 <b>+7 (902) 142-83-36</b></span>
+            <span>📍 ул. Азиатская, 12</span>
+            <span class="footer-pre">  ╱|、
+              (˚ˎ 。7  
+               |、˜〵          
+               じしˍ,)ノ</span>
+            <span>© 2026 Black Noodles</span>
+        </div>
+    </main>
+        <script src="scripts.js"></script>
+</body>
+</html>
